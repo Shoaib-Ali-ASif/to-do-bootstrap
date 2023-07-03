@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Management Application</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .red-border {
-            border: 1px solid red;
-        }
-    </style>
-</head>
-<body class="bg-primary d-flex align-items-center justify-content-center">
-    <div id="container" class="bg-white p-4 rounded">
-        <h2 id="add-task-heading" class="text-center">Task Management Application</h2>
-        <form id="form" class="mt-4">
-            <div class="form-group">
-                <input type="text" id="task-input" class="form-control" placeholder="Task">
-            </div>
-            <div class="form-group text-center">
-                <button id="btn-add" class="btn btn-primary">Add Task</button>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Todo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body class="text-bg-dark">
+    <div class="container">
+      <header class="text-center">
+        <h1 class="mt-3">Add Task</h1>
+        <form action="" id="form" class="form-inline mt-3">
+          <input
+            type="text"
+            id="add-task"
+            class="form-control mr-2"
+            placeholder="Enter the task!"
+          />
+          <button type="submit" class="btn btn-primary">Add Task</button>
+          <div id="error" class="text-danger ml-2"></div>
         </form>
-        <div id="task-list">
-            <!-- Task items will be dynamically added here -->
-        </div>
+      </header>
+      <h3 class="mt-4">Tasks</h3>
+      <section id="tasks-section"></section>
     </div>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-</body>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-pzjw8I+UA5ihTBl8rZ+5Wjy8+E5S6TFHW+9WkHy1g/R7Jhzwg4+0UcV41CV5ggVX"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
 </html>
