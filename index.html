@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .red-border {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body class="bg-primary d-flex align-items-center justify-content-center">
+    <div id="container" class="bg-white p-4 rounded">
+        <h2 id="add-task-heading" class="text-center">Task Management Application</h2>
+        <form id="form" class="mt-4">
+            <div class="form-group">
+                <input type="text" id="task-input" class="form-control" placeholder="Task">
+            </div>
+            <div class="form-group text-center">
+                <button id="btn-add" class="btn btn-primary">Add Task</button>
+            </div>
+        </form>
+        <div id="task-list">
+            <!-- Task items will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
